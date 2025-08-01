@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olena Horovenko - Full-Stack Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header id="home" class="hero">
+      <div class="hero-text">
+        <h2>Full-Stack Engineer</h2>
+        <p>Building modern, scalable, and user-friendly web applications.</p>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        With over a year of hands-on engineering experience and 9 years in
+        various roles across the tech industry, I bring a rare, end-to-end
+        perspective to creating impactful software products.
+      </p>
+      <p>
+        I began my engineering journey as a Frontend developer, working with
+        JavaScript, TypeScript, and React, and later expanded into full-stack
+        development before focusing primarily on the .NET backend.
+      </p>
+      <p>
+        In my current project I contribute as a Backend Engineer, designing and
+        implementing RESTful APIs in .NET using Clean Architecture and MediatR,
+        building features like user and user group management, conversation
+        history, and permission handling for an AI-powered enterprise web app.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skills-block">
+          <h3>Hard Skills</h3>
+          <ul>
+            <li>C#, .NET (Clean Architecture, MediatR)</li>
+            <li>React.js, Blazor, JavaScript/TypeScript</li>
+            <li>HTML5, CSS3, SASS/SCSS</li>
+            <li>SQL, PostgreSQL, REST APIs, GraphQL</li>
+            <li>Git, GitHub, Azure Repos</li>
+            <li>Figma & UX design principles</li>
+          </ul>
+        </div>
+        <div class="skills-block">
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Clear communication & collaboration</li>
+            <li>Problem solving & critical thinking</li>
+            <li>Adaptability in fast-changing environments</li>
+            <li>Detail-orientation & quality focus</li>
+            <li>Self-motivated continuous learner</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Check out my work on GitHub!</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p>
+        Email:
+        <a href="mailto:olena.horovenko@gmail.com">olena.horovenko@gmail.com</a>
+      </p>
+      <p>
+        LinkedIn:
+        <a
+          href="https://www.linkedin.com/in/olena-horovenko-1857a1a6/"
+          target="_blank"
+          >Olena Horovenko</a
+        >
+      </p>
+      <p>
+        GitHub:
+        <a href="https://github.com/olena-ho" target="_blank">olena-ho</a>
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p>© 2025 Olena Horovenko</p>
+    </footer>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
